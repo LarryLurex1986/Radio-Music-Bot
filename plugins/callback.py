@@ -161,15 +161,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/ZauteKm/Radio-Music-Bot'),
-            ],
-            [
-               InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-               InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
-            ],
-            [
-               InlineKeyboardButton('🔰 How to Deploy 🔰', url='https://t.me/c/1481808444/131'),
-        
+               InlineKeyboardButton('👥 devhelp', url='https://t.me/am_dq_fan'),
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
