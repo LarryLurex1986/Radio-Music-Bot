@@ -59,15 +59,7 @@ HELP = """
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/ZauteKm/Radio-Music-Bot'),
-    ],
-    [
-        InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-        InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
-    ],
-    [
         InlineKeyboardButton('🆘 Help & Commands 🆘', callback_data='help'),
-
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -80,16 +72,7 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/ZauteKm/Radio-Music-Bot'),
-        ],
-        [
-            InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-            InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
-        ],
-        [
-            InlineKeyboardButton('🔰 How to Deploy 🔰', url='https://t.me/c/1481808444/131'),
-        
-        ]
+            InlineKeyboardButton('👥 devhelp', url='https://t.me/am_dq_fan'),   
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(
