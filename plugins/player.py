@@ -214,7 +214,7 @@ async def yplay(_, message: Message):
         try:
             thumb = info["thumbnail"]
         except:
-            thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+            thumb="https://telegra.ph/file/adbcfce4d70c0520b24d7.jpg"
             pass
         if int(duration) > DURATION_LIMIT:
             k=await message.reply_text(f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)")
@@ -336,7 +336,7 @@ async def deezer(_, message):
                 try:
                     thumb=song.get("image")
                 except:
-                    thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+                    thumb="https://telegra.ph/file/adbcfce4d70c0520b24d7.jpg"
                     pass
                 GET_THUMB[url] = thumb
                 now = datetime.now()
@@ -423,7 +423,7 @@ async def deezer(_, message):
             try:
                 thumb=a.get("image")
             except:
-                thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+                thumb="https://telegra.ph/file/adbcfce4d70c0520b24d7.jpg"
                 pass
             GET_THUMB[url] = thumb
         except:
@@ -1312,15 +1312,11 @@ allcmd = ["play", "player", "splay", f"splay@{U}", f"play@{U}", f"player@{U}"] +
 async def not_chat(_, m: Message):
     buttons = [
         [
-            InlineKeyboardButton('🔺 Heroku', url='https://youtu.be/FKaAU4Pr2bw'),
-            InlineKeyboardButton('Qovery 🔺', url='https://youtu.be/KC4YdpDGQKg'),
-        ],
-        [
             InlineKeyboardButton('🆘 Help & Commands 🆘', callback_data='help'),       
         ],
         [
-            InlineKeyboardButton('👨‍💻 Developer', url='https://t.me/c/1417456571/580'),
-            InlineKeyboardButton('Channel 📢', url='https://t.me/c/1481808444/131')
+            InlineKeyboardButton('👨‍💻 Developer', url='https://t.me/am_dq_fan'),
+            InlineKeyboardButton('Channel 📢', url='https://t.me/kittumkittum')
         ]
         ]
     k=await m.reply("<b>You can't use this bot in this group, for that you have to make your own bot from the [Soure Code 👈](https://github.com/ZauteKm/Radio-Music-Bot) below.</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
